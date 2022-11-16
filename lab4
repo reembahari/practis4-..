@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] greade = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        for (int g : greade) {
+            System.out.println(g);
+            if (g >= 100) {
+                System.out.println("A+");
+            } else if (g >= 90) {
+                System.out.println("A");
+            } else if (g >= 85) {
+                System.out.println("B+");
+            } else if (g >= 80) {
+                System.out.println("B");
+            } else if (g >= 75) {
+                System.out.println("C+");
+            } else if (g >= 70) {
+                System.out.println("C");
+            } else if (g >= 60) {
+                System.out.println("F");
+            } else {
+                System.out.println("not avlibale");
+            }
+
+        }
+        String[] myname = {"shaza", "Mohamed", "Asmaa", "Anfal", "Yousra", "Amin", "Radwa", "Yasmen"};
+        for (String m : myname) {
+            System.out.println(m);
+            System.out.println(m.startsWith("a"));
+            int[] numbers = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+            for (int i = 0; i < numbers.length; i++) {
+                if (numbers[i] < 50) {
+                    continue;
+                }
+                System.out.println(numbers[i]);
+
+            }
+        }
+    }
+}
+
+
